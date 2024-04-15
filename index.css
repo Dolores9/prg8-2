@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* achtergrondkleur van de pagina */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Volledige hoogte van het scherm */
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+  }
+  
+  #video {
+    display: block;
+    margin: 0 auto; /* Om de video in het midden te plaatsen */
+  }
+  
+  .explanation {
+    margin-top: 20px;
+    max-width: 400px; /* Maximale breedte van het tekstvakje */
+    background-color: #fff; /* Achtergrondkleur van het tekstvakje */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Schaduw om het tekstvakje */
+  }
+  
+  .explanation h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Ruimte onder de titel */
+    color: #333; /* Kleur van de titel */
+  }
+  
+  .explanation p {
+    margin: 0; /* Verwijder standaardmarges van de alinea */
+    color: #555; /* Kleur van de tekst */
+  }
+  
