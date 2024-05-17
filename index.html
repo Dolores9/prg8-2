@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handpose Detector</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../favicon.ico" />
+    <title>Jutsu School</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer type="module"></script>
+    <script src="handpose.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <video id="video" width="640" height="480" autoplay muted></video>
-        <canvas id="canvas" width="640" height="480"></canvas>
+    <!-- 640 x 360 gets scaled by css to 1280 x 720-->
+    <div id="container">
+        <canvas id="canvas" width="1280" height="720"></canvas>
+        <video id="video" width="1280" height="720" autoplay></video>
     </div>
-    <div class="explanation">
-        <h2>Handpose Detector</h2>
-        <p>Deze demo maakt gebruik van TensorFlow.js en MediaPipe om real-time handpose detectie in de browser te demonstreren. De rode punten representeren de belangrijke punten (landmarks) van een hand.</p>
-    </div>
-
-    <!-- MediaPipe en TensorFlow.js libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
-    <script src="script.js"></script>
+    <div id="message">Loading...</div>
 </body>
+
 </html>
-
-
-<!-- https://medium.com/@aliceheimanxyz/recognize-hand-landmarks-using-google-mediapipe-and-opencv-9ca0a052ce75 -->
-<!-- https://medium.com/@kiyo07/integrating-mediapipe-tasks-vision-for-hand-landmark-detection-in-react-a2cfb9d543c7 -->
